@@ -59,14 +59,207 @@
 
 .banner-content p {
     font-size: 1.1rem;
-    max-width: 600px; /* Keeps the paragraph text neatly wrapped like the mockup */
+    max-width: 600px;
     margin: 0 auto 30px auto;
 }
 
 .btn2{
     margin-top: 280px;
 }
-.speakers{
+/* Speakers */
+.all-speakers {
+    padding: 60px 20px;
+}
+
+.all-speakers h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #0f172a;
+}
+
+.speakers {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 24px; 
+}
+
+.speaker-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+
+.badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+.field{
+    color: #2563eb;
+}
+
+.speaker-card h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.speaker-card .company {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748b;
+}
+
+/* Pricing */
+
+.pricing{
+    padding: 80px 0;
+}
+
+.pricing-heads{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-heads h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.pricing-heads p{
+    color: #64748b;
+    font-size: .95rem;
+}
+
+.pricing-cards{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+.standard,.pro, .team{
+    width: 330px;
+    min-height: 520px;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.standard, .team{
+    background: #fff;
+    border: 1px solid #e2e8f0;
+}
+
+.pro{
+    background: #0f172a;
+    color: white;
+    border-radius: 12px;
+}
+
+.plan{
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.pro .plan{
+    color: #60a5fa;
+}
+
+
+.price{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.pro .price{
+    color: white;
+}
+
+
+.per-person{
+    font-size: .9rem;
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.pro .per-person{
+    color: #94a3b8;
+}
+
+.standard hr, .team hr{
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.pro hr{
+    border: none;
+    border-top: 1px solid #334155;
+    margin-bottom: 20px;
+}
+
+
+.features{
+    list-style: disc;
+    padding-left: 18px;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.features li{
+    margin-bottom: 14px;
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+.features li::marker{
+     color: #2563eb;
+}
+
+.pro .features li{
+    color: #cbd5e1;
+}
+
+.standard button{
+    background: white;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.pro button{
+    background: #2563eb;
+    border: none;
+    color: white;
+}
+
+.team button{
+    background: white;
+    border: 1px solid #0f172a;
+    color: #0f172a;
 }
