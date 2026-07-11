@@ -406,51 +406,19 @@
     font-weight: 500;
 }
 
-/* Highlights visual */
-.quote-card{
-    background: #fffbeb;
-    border: 1px solid #fde68a;
+/* Highlights visual — image grid */
+.highlights-visual{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.highlight-img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     border-radius: 12px;
-    padding: 26px;
-    margin-bottom: 20px;
-}
-
-.quote-text{
-    font-size: 1.05rem;
-    font-style: italic;
-    color: #78350f;
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
-
-.quote-author{
-    font-size: .85rem;
-    color: #b45309;
-    font-weight: 600;
-}
-
-.stat-row{
-    display: flex;
-    justify-content: space-between;
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 20px;
-}
-
-.stat-row div{
-    text-align: center;
-}
-
-.stat-row h3{
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #0f172a;
-}
-
-.stat-row span{
-    font-size: .8rem;
-    color: #64748b;
+    background: #0f172a;
 }
 
 /* Jobs visual */
