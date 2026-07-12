@@ -2,6 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Inter", sans-serif;
 }
 .container{
     max-width: 1280px;
@@ -31,7 +32,9 @@
     color: #575757;
 }
 .logo{
+    display: flex;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 /* Banner */
 .banner{
@@ -164,7 +167,6 @@
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 .standard, .team{
@@ -195,6 +197,10 @@
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 6px;
+}
+
+.pricing .price {
+    text-align: left;
 }
 
 .pro .price{
@@ -264,7 +270,6 @@
     color: #0f172a;
 }
 /* Missing section */
-/* Feature Hub (Hackathon / Highlights / Jobs) */
 .feature-hub{
     padding: 90px 0;
 }
@@ -378,6 +383,9 @@
 .btn6{ background: #2563eb; }
 .btn7{ background: #b45309; }
 .btn8{ background: #15803d; }
+.btn7{
+    margin-bottom: 10px;
+}
 
 /* Hackathon stats grid */
 .hackathon-visual{
@@ -468,7 +476,7 @@
 }
 /* Footer */
 .footer{
-    background-color: #e2f6e9;
+    background-color: #25303d;
     padding: 50px 0 30px 0;
     width: 100%;
 }
@@ -501,11 +509,7 @@
     color: #cbd5e1;
     text-decoration: none;
     transition: background 0.2s ease;
-}
-
-.social-icon:hover{
-    background: #2563eb;
-    border-color: #2563eb;
+    cursor: pointer;
 }
 
 .social-icon img,
